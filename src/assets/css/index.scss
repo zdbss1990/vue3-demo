@@ -1,0 +1,70 @@
+.el-input__inner {
+    @apply dark: bg-dark-500 dark:text-white dark:border-gray-500;
+}
+
+.el-input__inner:focus {
+    @apply dark: border-gray-500;
+}
+
+.el-dropdown-menu {
+    @apply dark: bg-dark-500;
+}
+
+.el-popper__arrow {
+    display: none;
+}
+
+.el-dropdown-menu__item {
+    @apply dark: text-white;
+
+    &.is-active,
+    &:hover {
+        @apply dark: bg-dark-100 dark:text-white;
+    }
+}
+
+.el-drawer {
+    @apply dark: bg-dark-700;
+}
+
+.el-drawer__header {
+    padding: 14px;
+    margin-bottom: 0px;
+    @apply bg-gray-100 dark: bg-dark-500 dark:text-white;
+}
+
+.el-drawer__close-btn .el-icon:hover {
+    @apply dark: text-white;
+}
+
+.el-menu--popup {
+    @apply  !bg-gray-800 !dark: bg-dark-500;
+
+    .el-menu-item {
+        margin-bottom: 5px;
+
+        &:hover,
+        &.is-active {
+            background: #0960bd !important;
+        }
+    }
+}
+
+.el-card {
+    @apply dark: border-dark-400;
+}
+
+.el-card__header {
+    padding: 10px;
+    @apply dark: border-bottom-dark-400;
+}
+.el-table{
+    @apply !dark: bg-dark-500;
+    td,th.is-leaf{
+        @apply !dark: bg-dark-500;
+        @apply dark: border-gray-500;
+    }
+    thead tr th{
+        @apply dark: border-gray-500;
+    }
+}
