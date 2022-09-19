@@ -1,14 +1,14 @@
 <template>
-  <router-view/>
+  <router-view />
 </template>
 <script>
-import * as echarts from "echarts";
-import { provide } from "vue";
+import * as echarts from 'echarts'
+import { provide } from 'vue'
 export default {
-  name: "App",
+  name: 'App',
   setup() {
-    provide("ec", echarts); //provide
+    provide('ec', echarts) //provide
   },
-  components: {},
-};
+  components: {}
+}
 </script>

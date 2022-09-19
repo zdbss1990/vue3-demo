@@ -2,7 +2,7 @@
  * @Author: zhangyao
  * @Date: 2022-08-11 10:07:14
  * @LastEditors: zhangyao
- * @LastEditTime: 2022-08-11 10:28:58
+ * @LastEditTime: 2022-09-16 17:33:20
 -->
 <template>
   <el-skeleton animated :loading="loading">
@@ -14,24 +14,24 @@
   </el-skeleton>
 </template>
 <script>
-import { toRefs , onMounted } from "vue";
-export default{
-    props:{
-        loading:{
-            type:Boolean,
-            default:false
-        }
-    },
-    setup(props,context) {
-       let { loading } = toRefs(props);
-       onMounted(()=>{
-            setTimeout(() => {
-                context.emit('update:loading',false)
-            }, 1000)
-       })
-       return{
-        loading
-       }
+import { toRefs, onMounted } from 'vue'
+export default {
+  props: {
+    loading: {
+      type: Boolean,
+      default: false
     }
+  },
+  setup(props, context) {
+    let { loading } = toRefs(props)
+    onMounted(() => {
+      setTimeout(() => {
+        context.emit('update:loading', false)
+      }, 1000)
+    })
+    return {
+      loading
+    }
+  }
 }
 </script>

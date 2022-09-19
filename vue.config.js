@@ -2,7 +2,7 @@
  * @Author: zhangyao
  * @Date: 2022-01-14 10:49:32
  * @LastEditors: zhangyao
- * @LastEditTime: 2022-08-04 14:38:58
+ * @LastEditTime: 2022-09-19 10:19:56
  */
 const path = require('path');
 const webpack=require('webpack');
@@ -13,7 +13,7 @@ module.exports = {
     publicPath: './',
     outputDir: 'dist',
     assetsDir: 'static',
-    lintOnSave: false,
+    // lintOnSave: false,
     productionSourceMap: false,
     pluginOptions: {
         windicss: {

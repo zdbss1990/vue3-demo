@@ -2,7 +2,7 @@
  * @Author: zhangyao
  * @Date: 2022-08-09 16:01:56
  * @LastEditors: zhangyao
- * @LastEditTime: 2022-08-10 09:42:04
+ * @LastEditTime: 2022-09-19 10:21:58
  */
 import {
     ref, watch
@@ -33,7 +33,7 @@ export default function useDomClient(store,currentRouter,toPage,activeRoute) {
         }
         toPage(currentRoute)
     }
-    watch(visable,(newVal,oldVal)=>{
+    watch(visable,(newVal)=>{
         if(newVal){
             document.addEventListener('click',closeMenu)
         }else{
